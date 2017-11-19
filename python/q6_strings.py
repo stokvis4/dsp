@@ -22,14 +22,14 @@ def donuts(count):
 
 
 ```
-def donuts(count):
-    if count > -1:
-        if count < 10:
-            return (count) 
-        else:
-            return 'many'
-    else:
-        return "You can't have negative donuts!"
+>>def donuts(count):
+>>    if count > -1:
+>>        if count < 10:
+>>            return (count) 
+>>        else:
+>>            return 'many'
+>>    else:
+>>        return "You can't have negative donuts!"
 ```
 
 	
@@ -52,6 +52,11 @@ def both_ends(s):
     """
     raise NotImplementedError
 
+>>def both_ends(s):
+>>	if len(s) >2:
+>>		return s[:2] + s[-2:]
+>>	else:
+>>		return " "
 
 def fix_start(s):
     """
@@ -70,7 +75,17 @@ def fix_start(s):
     'donut'
     """
     raise NotImplementedError
-
+>>def fix_start(s):
+>>    word = []
+>>    f = s[0]
+>>    for l in s:
+>>        if l == f:
+>>            word.append("*")
+>>        else:
+>>            word.append(l)
+>>    wordA = "".join(word)
+>>    return f + wordA[1:]
+	
 
 def mix_up(a, b):
     """
@@ -89,6 +104,11 @@ def mix_up(a, b):
     """
     raise NotImplementedError
 
+>>def mix_up(a, b):
+>>	a1 = a[0]
+>>	b1 = b[0]
+>>	return b1 + a[1:] + " " + a1 + b[1:]	
+	
 
 def verbing(s):
     """
@@ -105,6 +125,14 @@ def verbing(s):
     'do'
     """
     raise NotImplementedError
+>>def verbing(s):
+>>	if len(s) > 2:
+>>		if s[-3:] == 'ing':
+>>			return s + 'ly'
+>>		else:
+>>			return s +'ing'
+>>	else:
+>>		return s
 
 
 def not_bad(s):
@@ -126,6 +154,12 @@ def not_bad(s):
     """
     raise NotImplementedError
 
+>>def not_bad(s):
+>>	f = s.index('not')
+>>	if s.find('not') < s.find('bad'):
+>>		return s[:f]+'good'
+>>	else:
+>>	    return s
 
 def front_back(a, b):
     """
@@ -144,3 +178,27 @@ def front_back(a, b):
     'KitDontenut'
     """
     raise NotImplementedError
+
+>>def front_back(a, b):
+>>    l1 = len(a)
+>>    l2 = len(b)
+>>#if both lengths even
+>>    if (l1 % 2 == 0 and l2 % 2 == 0):
+>>        l1 =int(l1/2)
+>>        l2 =int(l2/2)
+>>        return a[:l1] + b[:l2] + a[l1:] + b[l2:]
+>>#if first word odd length
+>>    elif l1 % 2 == 1 and l2 % 2 ==0:
+>>        l1 =int((l1/2)+.5)
+>>        l2 =int(l2/2)
+>>        return a[:l1] + b[:l2] + a[l1:] + b[l2:]
+>>#if second word odd length
+>>    elif l1 % 2 == 0 and l2 % 2 ==1:
+>>        l1 =int(l1/2)
+>>        l2 =int((l2/2)+.5)
+>>        return a[:l1] + b[:l2] + a[l1:] + b[l2:]
+>>#if both words odd length
+>>    elif l1 % 2 == 1 and l2 % 2 ==1:
+>>        l1 =int((l1/2)+.5)
+>>        l2 =int((l2/2)+.5)
+>>        return a[:l1] + b[:l2] + a[l1:] + b[l2:]
