@@ -19,7 +19,7 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-Core Commands:
+"""Core Commands:
 	pwd -> print working directory
 	ls -> list of files in directory
 	cd -> change directory
@@ -74,7 +74,7 @@ Redirection:
 		stdin -> standard input (information inputted into terminal)
 		stdout -> standard output (information outputted from a process)
 		stderr -> standard error (error message outputted by failed process)
-
+"""
 
 ---
 
