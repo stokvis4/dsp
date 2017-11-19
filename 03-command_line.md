@@ -74,6 +74,9 @@ Redirection:
 		stdin -> standard input (information inputted into terminal)
 		stdout -> standard output (information outputted from a process)
 		stderr -> standard error (error message outputted by failed process)
+Bash:
+	alias <new command>="<old command>"
+	
 ```
 
 ---
@@ -104,18 +107,20 @@ ls -Glp -> list of files in long format, appends a "/" after the directories, an
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
+```
 -t
 -1
 -R
 -F
 -p
+```
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+```
+xargs allows a user to run multiple commands at a single time.
  
 
