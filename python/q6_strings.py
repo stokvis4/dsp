@@ -20,6 +20,11 @@ def donuts(count):
     """
     raise NotImplementedError
 
+	if count < 11:
+		return count
+	else:
+		return 'many'
+	
 
 def both_ends(s):
     """
