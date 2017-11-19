@@ -121,6 +121,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 ```
-xargs allows a user to run multiple commands at a single time.
+xargs allows a user to run multiple commands in a single line of code.
+
+In this example, the terminal will print "1 2 3 4" but will then also reconfigure it into new lines of "x" length which is declared after "-n"
+
+$ echo 1 2 3 4 | xargs -n 2
  
 
