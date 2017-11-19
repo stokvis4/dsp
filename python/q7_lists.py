@@ -16,7 +16,13 @@ def match_ends(words):
     1
     """
     raise NotImplementedError
-
+    
+>>def match_ends(words):
+>>	count = 0
+>>	for i in words:
+>>		if len(i) > 1 and i[0] == i[-1]:
+>>			count += 1
+    
 
 def front_x(words):
     """
@@ -34,6 +40,17 @@ def front_x(words):
     """
     raise NotImplementedError
 
+>>def front_x(words):
+>>	xWords = []
+>>	otherWords = []
+>>	for a in words:
+>>		if a[0] == 'x':
+>>			xWords.append(a)
+>>		else:
+>>			otherWords.append(a)
+>>	xWords.sort()
+>>	otherWords.sort()
+>>	return xWords + otherWords
 
 def sort_last(tuples):
     """
@@ -50,7 +67,10 @@ def sort_last(tuples):
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
     raise NotImplementedError
-
+>>def sort_last(tuples):
+>>    y = sorted(tuples, key=lambda x: x[-1])
+>>    return y
+    
 
 def remove_adjacent(nums):
     """
@@ -70,6 +90,14 @@ def remove_adjacent(nums):
     """
     raise NotImplementedError
 
+>>def remove_adjacent(nums):
+>>	newNums = []
+>>	newNums.append(nums[0])
+>>	for x in nums[1:]:
+>>		if x != newNums[-1]:
+>>			newNums.append(x)
+>>	return newNums
+    
 
 def linear_merge(list1, list2):
     """
