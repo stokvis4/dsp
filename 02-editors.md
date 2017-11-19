@@ -68,7 +68,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 1.  Create a file called `nutmeg.py`, using **nano**, add a couple of lines of text, save and exit.  
 Some sample lines:  
-'''
+```
 print("This file was created using the nano editor")
 print("This file was created by Reshama")
 ```
