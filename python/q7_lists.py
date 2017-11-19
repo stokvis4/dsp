@@ -114,3 +114,8 @@ def linear_merge(list1, list2):
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
     raise NotImplementedError
+    
+>>import heapq
+>>def linear_merge(list1, list2):
+>>	list3 = heapq.merge(list1, list2)
+>>	return list3
