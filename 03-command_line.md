@@ -89,6 +89,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
+```
 ls -> list of files in directory
 ls -a -> list all content (including hidden files)
 ls -l -> list all content in long format
@@ -96,6 +97,7 @@ ls -lh -> list content in long format with human readable sizes
 ls -lah -> list content in long format (including hidden files) with human readable sizes
 ls -t -> orders files by last modification date
 ls -Glp -> list of files in long format, appends a "/" after the directories, and highlights the directories in blue
+```
 ---
 
 ### Q3.  More List Files in Unix  
