@@ -24,7 +24,7 @@ def donuts(count):
 ```
 def donuts(count):
     if count > -1:
-        if count < 11:
+        if count < 10:
             return (count) 
         else:
             return 'many'
