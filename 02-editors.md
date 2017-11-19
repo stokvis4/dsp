@@ -68,7 +68,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 1.  Create a file called `nutmeg.py`, using **nano**, add a couple of lines of text, save and exit.  
 Some sample lines:  
-```
+'''
 print("This file was created using the nano editor")
 print("This file was created by Reshama")
 ```
@@ -81,17 +81,17 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
-I will use Emacs although harder to learn, I think it will be beneficial and is more suited to me as a programmer.
+>>I will use Emacs although harder to learn, I think it will be beneficial and is more suited to me as a programmer.
 --
 
 ### Q3. Graphical Editor
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I will be using Sublime although I may consider using Atom since they released Teletype. I have gone to few classes and every instructor always recommends Sublime. I made the switch and I like the clean design. Additionally, the multi-edit featureu will be very useful in the future as I make changes. Since I have written code in other languages, I think it is useful to use a code editor that is dynamic. 
+>>I will be using Sublime although I may consider using Atom since they released Teletype. I have gone to few classes and every instructor always recommends Sublime. I made the switch and I like the clean design. Additionally, the multi-edit featureu will be very useful in the future as I make changes. Since I have written code in other languages, I think it is useful to use a code editor that is dynamic. 
 
-I learned Ctrl - Shift -K/L which will allow me to quicken any changes I may be need to make to my code. By removing the need for find and replace, I can be a more efficient coder. 
+>>I learned Ctrl - Shift -K/L which will allow me to quicken any changes I may be need to make to my code. By removing the need for find and replace, I can be a more efficient coder. 
 
-I have only customized the color scheme and theme. I will continue to play with these as I use the editor more.
+>>I have only customized the color scheme and theme. I will continue to play with these as I use the editor more.
 
  
