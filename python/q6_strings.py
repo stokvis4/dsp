@@ -20,10 +20,16 @@ def donuts(count):
     """
     raise NotImplementedError
 
-	if count < 11:
-		return count
-	else:
-		return 'many'
+'''
+def donuts(count):
+    if count > -1:
+        if count < 11:
+            return (count) 
+        else:
+            return 'many'
+    else:
+        return "You can't have negative donuts!"
+'''
 	
 
 def both_ends(s):
