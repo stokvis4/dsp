@@ -117,5 +117,7 @@ def linear_merge(list1, list2):
     
 >>import heapq
 >>def linear_merge(list1, list2):
->>	list3 = heapq.merge(list1, list2)
->>	return list3
+>>    list3 = []
+>>    for x in heapq.merge(list1, list2):
+>>        list3.append(x)
+>>    return list3
