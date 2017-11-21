@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists (which uses "[]") and Tuples (which uses "()")  each contain a set of values. The main difference between a list and tuple is that a list is mutable and thus the number of values (and memory) can vary while a tuple is fixed. Only a tuple can be used as a key in a dictionary because it is immutable and is used  as reference for the values in the dictionary. Every key in a dictionary has a unique hash value and since a list is mutable, if the list were to change, it would skew the dictionary and the value that was returned would be different.
 
 ---
 
@@ -20,7 +20,11 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> A list is an group of values that is ordered (you can call individual values by their index) and may contain duplicates. A set is an unordered list and cannot contain duplicates.
+>>set: l = {'a','d','b','c','d'} --> print(l) = {'d', 'b', 'c', 'a'}
+>>list: l =['a','b','c','d','e'] --> print(i) = ['a','b','c','d','e']
+
+>>If you are looking if an element exists in a list or set, the set performs better. It takes O(1) to find an element in the set compared to O(n) for the list which is linear time and takes increasingly long depending on how long the list is. 
 
 ---
 
@@ -28,8 +32,8 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> lambda is a small anonymous function that reduces the amount of scripting needed. Lambda, in the case below, allows us to reduce the amount of code needed and allows us to use a function once in another function. 
+>> Example: sorted(['Some', 'words', 'sort', 'differently'], key=lambda word: word.lower())
 ---
 
 ### Q4. List Comprehension, Map &amp; Filter
