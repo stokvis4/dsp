@@ -7,8 +7,8 @@
 import pandas as pd
 import numpy as np
 
-def find_nearest_index(col1,col2):
-    idx = (np.abs(col1-col2)).argmin()
+def find_nearest_index(col, value):
+    idx = (np.abs(col-value)).argmin()
     return idx
 
 #Import CSV
