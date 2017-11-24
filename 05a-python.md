@@ -40,7 +40,13 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>List comprehensions allow you to produce lists more efficiently.
+>> An example of a list comprehension: numSquared = [num for num in range(10) if num % 2 ==0]
+>> The equivalent with 'map': numSquared  = list(map(lambda num: num if num % 2== 0 else None, range(10)))
+>> The equivalent with 'filter': numSquared = list(filter(lambda num: num % 2 ==0, range(10)))
+>> Map applies a function across a list or set of values in a very similar way to list comprehension. Filter does a similar task but removes values that return false according to the lambda statement.
+>> Set comprehensions allow you to perform tasks on a set similar to list comprehensions. Dictionary comprehensions are similar as well but require both a key and value to be inputs.
+
 
 ---
 
