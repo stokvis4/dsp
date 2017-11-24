@@ -49,3 +49,43 @@ maRegx = re.compile(r'ma',re.I)
 malist = list(filter(maRegx.search, degree))
 counts['M.A.'] =len(malist)
 counts
+
+#Q2
+titleCounts = {}
+profRegx = re.compile(r'Professor',re.I)
+proflist = list(filter(profRegx.match, title))
+titleCounts['Professors'] =len(proflist)
+
+assocprofRegx = re.compile(r'Associate',re.I)
+assocproflist = list(filter(assocprofRegx.match, title))
+titleCounts['Associate Professors'] =len(assocproflist)
+
+assistprofRegx = re.compile(r'Assistant',re.I)
+assistproflist = list(filter(assistprofRegx.match, title))
+titleCounts['Assistant Professors'] =len(assistproflist)
+
+titleCounts
+
+#Q3 
+email[1:]
+
+#Q4
+
+emailCounts = {}
+mailmedRegx = re.compile(r'@mail\.med\.upenn\.edu',re.I)
+mailmedlist = list(filter(mailmedRegx.search, email))
+emailCounts['Mail Med UPenn'] =len(mailmedlist)
+
+ccebmedRegx = re.compile(r'@cceb\.med\.upenn\.edu',re.I)
+ccebmedlist = list(filter(ccebmedRegx.search, email))
+emailCounts['CCEB Med UPenn'] =len(ccebmedlist)
+
+upennRegx = re.compile(r'@upenn\.edu',re.I)
+upennlist = list(filter(upennRegx.search, email))
+emailCounts['UPenn'] =len(upennlist)
+
+chopRegx = re.compile(r'@email\.chop\.edu',re.I)
+choplist = list(filter(chopRegx.search, email))
+emailCounts['Chop'] =len(choplist)
+
+emailCounts
