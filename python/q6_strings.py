@@ -23,14 +23,12 @@ def donuts(count):
 
 ```
 >>def donuts(count):
->>    if count > -1:
->>        if count < 10:
->>            return (count) 
->>        else:
->>            return 'many'
+>>    if count > -1 and count < 10:
+>>        return str("number of donuts: {}".format(count))
+>>    elif count >= 10:
+>>        return 'number of donuts: many'
 >>    else:
 >>        return "You can't have negative donuts!"
-```
 
 	
 
@@ -53,7 +51,7 @@ def both_ends(s):
     raise NotImplementedError
 
 >>def both_ends(s):
->>	if len(s) >2:
+>>	if len(s) >=2:
 >>		return s[:2] + s[-2:]
 >>	else:
 >>		return " "
@@ -105,9 +103,9 @@ def mix_up(a, b):
     raise NotImplementedError
 
 >>def mix_up(a, b):
->>	a1 = a[0]
->>	b1 = b[0]
->>	return b1 + a[1:] + " " + a1 + b[1:]	
+>>	a1 = a[:2]
+>>	b1 = b[:2]
+>>	return b1 + a[2:] + " " + a1 + b[2:]	
 	
 
 def verbing(s):
@@ -126,7 +124,7 @@ def verbing(s):
     """
     raise NotImplementedError
 >>def verbing(s):
->>	if len(s) > 2:
+>>	if len(s) >= 3:
 >>		if s[-3:] == 'ing':
 >>			return s + 'ly'
 >>		else:
